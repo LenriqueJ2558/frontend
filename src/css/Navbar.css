@@ -1,0 +1,49 @@
+
+  
+  .navbar-brand, .nav-link {
+    font-weight: bold;
+    color: #000; /* Color negro para el texto */
+  }
+  
+  .nav-link {
+    margin-right: 10px;
+  }
+  
+  .cart-icon, .user-icon {
+    cursor: pointer;
+    color: #000; /* Color negro para los íconos */
+  }
+  
+  .cart-icon:hover, .user-icon:hover {
+    color: #555; /* Un gris más claro para el efecto hover */
+  }
+  .cart-icon-container {
+    position: relative;
+  }
+  
+  .cart-item-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    font-weight: bold;
+  }

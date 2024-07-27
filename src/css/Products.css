@@ -1,0 +1,36 @@
+.products-container {
+    padding: 2em;
+    
+    position: relative; /* Para posicionar el botón de login relativo a este contenedor */
+  }
+  
+  .products-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+    font-weight: bold; /* Para que el texto se vea más prominente */
+    
+    
+  }
+  
+  .login-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    
+  }
+  
+  .product-carousel {
+    width: 100%;
+  }
+  
+  .product-card {
+    flex: 1;
+    margin: 0 0.5em;
+  }
+
+ 
