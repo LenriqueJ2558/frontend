@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import { CartContext } from '../contexts/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,12 +8,14 @@ import '../css/Navbar.css';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
-  const { cart } = useContext(CartContext);
+  const { cart,setCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     setUser(storedUser);
+    const products=JSON.parse(localStorage.getItem("cart"));
+    console.log("[PRODUCTS]",products,cart);
   }, []);
 
   const handleCartClick = () => {
@@ -39,7 +41,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/products">My Store</a>
+        <NavLink className="navbar-brand" to={"/products"}>My Stores</NavLink>
         <div className="collapse navbar-collapse justify-content-end">
           <ul className="navbar-nav">
             {user ? (
