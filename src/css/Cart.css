@@ -18,3 +18,14 @@
     width: 100%;
     max-width: 500px;
   }
+
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-controls span {
+    width: 30px;
+    text-align: center;
+  }
